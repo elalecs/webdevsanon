@@ -1,10 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<meta charset="utf-8">
 	<title>From Regressive to Progressive Web Apps - Web Developers Anonymous</title>
+	<meta name="theme-color" content="#db5945">
 	<meta name="description" content="A fake conference all about Progressive Web Apps.">
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="bower_components/sw-toolbox/sw-toolbox.js"></script>
+	<script>
+	if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js').then((registration) => {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch((err) => {
+     // registration failed
+     console.log('ServiceWorker registration failed: ', err); });
+}
+</script>
 </head>
 <body>
 	<article>

@@ -1,0 +1,25 @@
+{
+  "name": "webdevsanon",
+  "version": "1.0.0",
+  "description": "This repository contains a regular website (the \"regressive\" branch) and a version of that same website transformed into a progressive web app (the \"progressive\" branch). It was created to be used at a talk and workshop titled \"From Regressive to Progressive Web Apps\" that I gave at Google's Launchpad Space on December 12, 2016.",
+  "main": "./",
+  "dependencies": {
+    "sw-precache": "^4.2.3"
+  },
+  "devDependencies": {
+    "sw-precache": "^4.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elalecs/webdevsanon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elalecs/webdevsanon/issues"
+  },
+  "homepage": "https://github.com/elalecs/webdevsanon#readme"
+}
